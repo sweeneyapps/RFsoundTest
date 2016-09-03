@@ -1,0 +1,31 @@
+{
+   "manifest_version": 2,
+   
+   "background": {
+      "persistent": true,
+      "scripts": [ "main.js" ]
+   },
+
+   "options_page": "options.html",
+
+   "options_ui": {
+     "page": "options.html",
+     "chrome_style": true
+   },
+   
+   "browser_action": {
+      "default_icon": "myicons.png"
+   }, 
+   
+   "permissions": [
+     "tabs", 
+     "activeTab",
+     "storage",
+     "*://*.rainforestqa.com/*"
+     ],
+
+   "name": "RF Sound Test",
+   "version": "1.0.0",
+   "description": "sound test",
+   "homepage_url": "https://github.com/sweeneyapps/"
+}
